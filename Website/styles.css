@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.top-bar {
+  background: #f26522;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.header {
+  background: #f5f5f5;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #f26522;
+  font-size: 24px;
+}
+.logo h1 span {
+  color: #002060;
+}
+.logo p {
+  font-size: 12px;
+  color: #888;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.call-btn {
+  background: #f26522;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 280px 40px 200px; 
+  position: relative;
+}
+
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #3f3fff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.search-box {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.features {
+  background: #00184d;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 10px;
+  font-size: 14px;
+}
